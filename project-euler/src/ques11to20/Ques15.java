@@ -6,8 +6,6 @@ import java.util.List;
 
 public class Ques15 {
 	
-	//DIFFICULTY LEVEL == HARD
-	
 	private static long startTime = System.currentTimeMillis();
 	
 	public static BigInteger findRoutes(int limit) {
@@ -58,12 +56,3 @@ public class Ques15 {
         System.out.println("It took " + (endTime - startTime) + " milliseconds");
 	}
 }
-
-
-//TODO PASCAL TRIANGLE
-
-//	    1
-//	   1 1
-//	  1 2 1
-//	 1 3 3 1
-//	1 4 6 4 1
