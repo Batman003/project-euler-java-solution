@@ -1,1 +1,1 @@
-# project-euler-java-solutuin
+# project-euler-java-solution
