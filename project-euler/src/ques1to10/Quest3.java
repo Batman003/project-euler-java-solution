@@ -5,7 +5,7 @@ import java.util.List;
 
 
 
-public class Quest3to5 {
+public class Quest3 {
 	
 	public Long largePrimeFactorOfNumber(long req) {
 		
@@ -47,7 +47,7 @@ public class Quest3to5 {
 	}
 	
 	public static void main(String[] args) {
-		Quest3to5 ques = new Quest3to5();
+		Quest3 ques = new Quest3();
 		System.out.println("START");
 		Long result = ques.largePrimeFactorOfNumber(600851475143l);
 		System.out.println("RESULT ::"+result);
