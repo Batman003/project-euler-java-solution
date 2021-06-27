@@ -15,7 +15,7 @@ import java.math.BigInteger;
 public class Ques20 {
 
 	
-	public static BigInteger getFactorial(int num) {
+	public static int getFactorial(int num) {
 		BigInteger getFactorial = BigInteger.ONE;
 		for(int i = 0;i<num;i++) {
 			getFactorial = getFactorial.multiply(BigInteger.valueOf(num-i));
@@ -29,12 +29,11 @@ public class Ques20 {
 			getFactorial = getFactorial.divide(BigInteger.TEN);
 			result = result.add(temp);
 		}
-		
-		return result;
+		return result.intValue();
 	}
 	
 	public static void main(String[] args) {
-		BigInteger result = getFactorial(100);
+		int result = getFactorial(100);
 		System.out.println(result);
 	}
 }
