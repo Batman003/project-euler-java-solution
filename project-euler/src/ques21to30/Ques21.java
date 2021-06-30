@@ -1,6 +1,9 @@
 package ques21to30;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 
@@ -25,6 +28,7 @@ public class Ques21 {
 		int limit = (int) Math.sqrt(num);
 
 		Set<Integer> set = new HashSet<Integer>();
+		//List<Integer> set = new ArrayList<Integer>();
 
 		set.add(1);
 
@@ -34,6 +38,8 @@ public class Ques21 {
 				set.add(num / i);
 			}
 		}
+		
+		System.out.println(Arrays.asList(set));
 		sum = set.parallelStream().reduce(0, Integer::sum);
 		return sum;
 	}
@@ -55,7 +61,8 @@ public class Ques21 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getAmicableNumbers(10000));
+		//System.out.println(getAmicableNumbers(10000));
+		System.out.println(getFactorialSum(500));
 	}
 
 }
