@@ -76,8 +76,7 @@ public class Ques23 {
 				result += i;
 			}
 		}
-		
-		System.out.println("CONFLICT");
-		//System.out.println("Sum of all positive integers which cannot be written as the sum of two abundant numbers:: "+result);
+
+		System.out.println("Sum of all positive integers which cannot be written as the sum of two abundant numbers:: "+result);
 	}
 }
