@@ -61,17 +61,23 @@ public class Ques23 {
 	public static void main(String[] args) {
 		
 		int result = 0;
-		List<Integer> sumOfTwoAbundantNumber = new ArrayList<Integer>();
+		
 		List<Integer> list = getAbundantNumList(ABUNDANT_NUMBER_LIMIT, "A");
+		
+		boolean[] sumOfTwoAbundantNumber = new boolean[ABUNDANT_NUMBER_LIMIT+1];
 		
 		for(int x = 0; x < list.size();x++) {
 			for(int y = x; y < list.size();y++) {
-				sumOfTwoAbundantNumber.add(list.get(x)+list.get(y));
+				if(list.get(x) + list.get(y) <= ABUNDANT_NUMBER_LIMIT) {
+				sumOfTwoAbundantNumber[list.get(x) + list.get(y)]  = true;
+				}else {
+					break;
+				}
 			}
 		}
 		
 		for (int i = 1; i < ABUNDANT_NUMBER_LIMIT; i++) {
-			if(!sumOfTwoAbundantNumber.contains(i)) {
+			if(!sumOfTwoAbundantNumber[i]) {
 				result += i;
 			}
 		}
